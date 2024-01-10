@@ -79,11 +79,10 @@ function CartScreen() {
                   <Col md={1}>
                     <Button
                       type="button"
-                      className="btn-block"
-                      disabled={cartItems.length === 0}
-                      onClick={checkoutHandler}
+                      variant="light"
+                      onClick={() => removeFromCartHandler(item.product)}
                     >
-                      Proceed To Checkout
+                      <i className="fas fa-trash"></i>
                     </Button>
                   </Col>
                 </Row>
